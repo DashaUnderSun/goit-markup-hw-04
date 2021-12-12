@@ -132,9 +132,11 @@ body {
 }
 .nav-list-contacts {
   list-style: none;
-  display: flex;
   margin-left: auto;
+  display: inline-flex;
+  align-items: center;
 }
+
 .nav-contacts:not(:last-child) {
   margin-right: 50px;
 }
@@ -156,7 +158,6 @@ body {
 .contacts-items-link {
   fill: currentColor;
   margin-right: 10px;
-  
 }
 
 .section-hero {
@@ -228,6 +229,15 @@ body {
 .advantages-item:not(:last-child) {
   margin-right: 30px;
 }
+.advantages-items-icon {
+  display: flex;
+  justify-content: center;
+  padding: 25px 0;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  background-color: #f5f4fa;
+}
+
 .advantages-title {
   font-weight: 700;
   font-size: 14px;
@@ -315,11 +325,79 @@ body {
   text-align: center;
 }
 
+.team-item-icons {
+  margin-top: 16px;
+  width: 44px;
+  height: 44px;
+}
+
+.team-item-link {
+  color: #afb1b8;
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.team-item-link:hover,
+.team-item-link:focus {
+  background-color: #2196f3;
+}
+.team-item-link:hover .team-social-link,
+.team-item-link:focus .team-social-link {
+  fill: var(--primary-white-color);
+}
+
+.team-list-icons {
+  display: flex;
+  justify-content: center;
+}
+.team-item-icons + .team-item-icons {
+  margin-left: 10px;
+}
+
+.team-social-link {
+  fill: #afb1b8;
+}
+
 .clients-titel {
+  font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  padding-top: 94px;
+}
+
+.client-items li + li {
+  margin-left: 30px;
+}
+.client-items {
+  display: flex;
+  padding-bottom: 94px;
+}
+.client-item-link {
+  display: inline-block;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 14px 32px;
+}
+.client-item-link {
+  color: #afb1b8;
+}
+
+.client-item-icon {
+  fill: currentColor;
+}
+.client-item-link:hover,
+.client-item-link:active {
+  color: var(--accent-color);
+  fill: currentColor;
+  border-color: var(--link-f-h-color);
 }
 
 .footer {
@@ -333,7 +411,6 @@ body {
   padding-bottom: 60px;
 }
 .logo-footer {
-  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.192;
@@ -356,15 +433,21 @@ body {
   margin-top: 20px;
 }
 .footer-description {
+  text-decoration: none;
+  color: var(--primary-white-color);
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
-  text-decoration: none;
-  color: var(--primary-white-color);
 }
 
+.footer-item {
+  font-style: inherit;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--primary-white-color);
+}
 .footer-mail-item,
 .footer-tel-item {
   font-style: normal;
@@ -379,6 +462,33 @@ body {
 .footer-tel-item:hover,
 .footer-tel-item:focus {
   color: var(--hover-color);
+}
+
+.footer-list-container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-list:not(:last-child) {
+  margin-top: 9px;
+}
+
+.footer-social {
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+  margin-bottom: 20px;
+}
+
+.footer-social-item {
+  margin-left: 70px;
+}
+.footer-social-color {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.team-social-link-color {
+  fill: var(--primary-white-color);
 }
 
 .works-section {
