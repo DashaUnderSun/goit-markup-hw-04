@@ -153,6 +153,11 @@ body {
 .contacts:focus {
   color: var(--accent-color);
 }
+.contacts-items-link {
+  fill: currentColor;
+  margin-right: 10px;
+  
+}
 
 .section-hero {
   width: 1200px;
