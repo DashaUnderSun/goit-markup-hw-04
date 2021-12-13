@@ -98,19 +98,20 @@ body {
 .navigation {
   display: flex;
   align-items: baseline;
-}
+  
+  }
 
 .nav-list {
   list-style: none;
   display: flex;
+  align-items: center;
 }
+
 
 .nav-item:not(:last-child) {
   margin-right: 50px;
 }
-.main-nav {
-  align-items: center;
-}
+
 .nav-link {
   text-decoration: none;
   padding-bottom: 32px;
@@ -123,7 +124,7 @@ body {
   letter-spacing: 0.02em;
   color: var(--secondary-color);
 }
-.nav-link > span {
+.current {
   color: var(--accent-color);
 }
 .nav-link:hover,
@@ -133,8 +134,9 @@ body {
 .nav-list-contacts {
   list-style: none;
   margin-left: auto;
-  display: inline-flex;
-  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+ 
 }
 
 .nav-contacts:not(:last-child) {
@@ -148,8 +150,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--text-color);
-  padding-top: 32px;
-  padding-bottom: 32px;
+  
 }
 .contacts:hover,
 .contacts:focus {
@@ -158,10 +159,11 @@ body {
 .contacts-items-link {
   fill: currentColor;
   margin-right: 10px;
+  vertical-align: middle;
 }
 
 .section-hero {
-  width: 1200px;
+  width: 1600px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -275,7 +277,7 @@ body {
 
 .team {
   background-color: var(--team-color);
-  width: 1200px;
+  width: 1600px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
