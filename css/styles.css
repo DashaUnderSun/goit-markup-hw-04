@@ -147,6 +147,8 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--text-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .contacts:hover,
 .contacts:focus {
@@ -278,11 +280,6 @@ body {
 
 .team {
   background-color: var(--team-color);
-  width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -329,7 +326,6 @@ body {
 }
 
 .team-item-icons {
-  margin-top: 16px;
   width: 44px;
   height: 44px;
 }
@@ -410,7 +406,6 @@ body {
 
 .footer {
   background: var(--background-color);
-  width: 1600px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -549,7 +544,6 @@ body {
   margin: -15px;
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 94px;
 }
 .works-list-item {
   margin: 15px;
