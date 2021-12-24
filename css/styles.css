@@ -98,15 +98,13 @@ body {
 .navigation {
   display: flex;
   align-items: baseline;
-  
-  }
+}
 
 .nav-list {
   list-style: none;
   display: flex;
   align-items: center;
 }
-
 
 .nav-item:not(:last-child) {
   margin-right: 50px;
@@ -136,7 +134,6 @@ body {
   margin-left: auto;
   display: flex;
   justify-content: flex-end;
- 
 }
 
 .nav-contacts:not(:last-child) {
@@ -150,7 +147,6 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--text-color);
-  
 }
 .contacts:hover,
 .contacts:focus {
@@ -217,6 +213,8 @@ body {
 }
 
 .advantages {
+  align-items: center;
+  justify-content: center;
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -224,17 +222,18 @@ body {
   list-style: none;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
-.advantages-item {
-  width: 270px;
-}
+
 .advantages-item:not(:last-child) {
   margin-right: 30px;
 }
 .advantages-items-icon {
   display: flex;
   justify-content: center;
-  padding: 25px 0;
+  align-items: center;
+  width: 270px;
+  height: 120px;
   margin-bottom: 30px;
   border-radius: 4px;
   background-color: #f5f4fa;
@@ -250,6 +249,7 @@ body {
 }
 .advantages-text {
   color: var(--text-color);
+  width: 270px;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -270,6 +270,7 @@ body {
   list-style: none;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .services-item:not(:last-child) {
   margin-right: 30px;
@@ -386,7 +387,11 @@ body {
   border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
-  padding: 14px 32px;
+  width: 170px;
+  height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .client-item-link {
   color: #afb1b8;
@@ -396,15 +401,16 @@ body {
   fill: currentColor;
 }
 .client-item-link:hover,
-.client-item-link:active {
+.client-item-link:active,
+.client-item-link:focus {
   color: var(--accent-color);
   fill: currentColor;
-  border-color: var(--link-f-h-color);
+  border-color: var(--accent-color);
 }
 
 .footer {
   background: var(--background-color);
-  width: 1200px;
+  width: 1600px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -549,13 +555,16 @@ body {
   margin: 15px;
   flex-basis: calc((100% - 3 * 30px) / 3);
 }
+.portfolio-link {
+  text-decoration: none;
+  display: block;
+  color: var(--text-color);
+}
 
-.box-footer {
-  padding: 20px 24px;
-  background: var(--primary-white-color);
-  border-right: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
+.portfolio-link:hover,
+.portfolio-link:focus {
+  box-shadow: 0px 1px 1px rgb(0 0 0 / 12%), 0px 4px 4px rgb(0 0 0 / 6%),
+    1px 4px 6px rgb(0 0 0 / 16%);
 }
 
 .works-list-title {
@@ -564,6 +573,7 @@ body {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  color: #212121;
 }
 
 .work-list-subtitle {
@@ -572,5 +582,12 @@ body {
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.03em;
-  color: var(--text-color);
+}
+
+.box-footer {
+  padding: 20px 24px;
+  background: var(--primary-white-color);
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
