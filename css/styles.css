@@ -277,6 +277,29 @@ body {
 .services-item:not(:last-child) {
   margin-right: 30px;
 }
+.services-item-wrap {
+  position: relative;
+  overflow: hidden;
+}
+.services-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  padding: 27px 85px;
+  width: 100%;
+  background-color: rgba(47, 48, 58, 0.8);
+  color: var(--primary-white-color);
+  transform: translateY(100%);
+}
+.services-list:hover .services-text {
+  transform: translateY(0%);
+}
 
 .team {
   background-color: var(--team-color);
